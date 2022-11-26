@@ -24,7 +24,12 @@
     margin-right: 20px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color:black
 }
 
 .header nav ul {
@@ -32,12 +37,13 @@
 }
 
 .header nav ul li {
-    display: inline-block;
+    display: inline;
     margin-left: 25px;
+
 }
 
 .hero {
-    height: 500px;
+    height: 400px;
     width: 100%;
     margin-bottom: 25px;
     background-image: url("../assets/images/CoverPhoto.jpeg");
@@ -51,7 +57,7 @@
     margin-left: 20px;
 } 
 
-.about {
+#about {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -60,8 +66,12 @@
     color: #ffffff;
 }
 
+.float-left {
+    float: left;
+    margin-right: 25px;
+}
 
-.work {
+#work {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -70,7 +80,7 @@
     color: #ffffff;
 }
 
-.contact {
+#contact {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
@@ -78,3 +88,24 @@
     background-color: darkslategray;
     color: #ffffff;
 }
+
+footer {
+    text-align: center;
+    color: gray;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+@media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
+    body {
+        background-color: lightblue;
+    }
+}
+
+@media screen and (max-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
+    body {
+        background-color: lightyellow;
+    }
+}
+
+
+    
