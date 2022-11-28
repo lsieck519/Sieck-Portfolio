@@ -1,6 +1,7 @@
-body {
-    margin: 0px;
-}
+* {
+    margin: 0;
+    padding: 0;
+  } 
 
 .header {
     padding: 20px;
@@ -35,17 +36,9 @@ body {
 
 }
 
-.centered {
-    text-align: center;
-}
-
-.hero-content {
-    color: #FFF;
-}
-
 .hero {
     align-items: center;
-    height: 300px;
+    height: 350px;
     width: 100%;
     display: flex;
     background-image: url("../assets/images/CoverPhoto.jpg");
@@ -54,10 +47,27 @@ body {
     justify-content: center;
 }
 
+.hero-centered {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    color:brown;
+    padding: 5px;
+    margin: 5px;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+
 .content {
     width: 100%;
     display: inline-block;
-} 
+ }
 
 #about {
     margin-bottom: 20px;
@@ -70,6 +80,11 @@ body {
 
 .float-left {
     float: left;
+    margin-right: 25px;
+}
+
+.float-right {
+    float: right;
     margin-right: 25px;
 }
 
