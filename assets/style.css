@@ -1,45 +1,48 @@
 * {
+    box-sizing:content-box;
     margin: 0;
     padding: 0;
   } 
 
-.header {
+  .header {
     padding: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-color:antiquewhite;
     background: linear-gradient(lightblue, antiquewhite);
     color: darkslategray;
 }
 
 .header h1 {
-    display: inline-block;
-    font-size: 36px;
-    color: darkslategray;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 20px;
+    margin-left: 20px;
+    float: left;
+    font-size: 40px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-style: italic;
 }
 
 .header nav {
-    padding-top: 15px;
+    padding: 10px;
     margin-right: 20px;
+    margin-top: 27px;
     float: right;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 24px;
-    color: darkslategray;
+    font-size: 22px;
 }
 
 .header nav a {
     text-decoration: none;
-    color:black
+    color: darkslategray;
 }
 
 .header nav ul li {
     display: inline;
     margin-left: 25px;
-
 }
 
 .hero {
     align-items: center;
-    height: 350px;
+    height: 375px;
     width: 100%;
     display: flex;
     background-image: url("../assets/images/CoverPhoto.jpg");
@@ -50,11 +53,11 @@
 
 .hero-centered {
     text-align: center;
-    font-family:fantasy;
+    font-family:monospace;
     font-size: 25px;
     color:brown;
-    padding: 5px;
-    margin: 5px;
+    padding: 0px;
+    margin: 12px;
 }
 
 .vertical-center {
@@ -71,19 +74,19 @@
  }
 
 
-#about {
+.maincontent {
     margin-bottom: 20px;
     padding: 50px;
     height: 300px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: darkslategray;
+    background-color: rgb(86, 126, 126);
     color: #ffffff;
 }
 
 article {
     margin-top: 20px;
     line-height: 1.5;
-    font-size: 20px;
+    font-size: 21px;
 }
 
 .float-left {
@@ -97,33 +100,20 @@ article {
     margin-left: 15px;
 }
 
-#work {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: darkslategray;
-    color: #ffffff;
-}
-
-#projects {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: darkslategray;
-    color: #ffffff;
-}
-
 footer {
     text-align: center;
     color: gray;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 2;
+    margin-bottom: 5px;
 }
 
+button {
+    float: center;
+    font-size: 15px;
+}
 @media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
     body {
-        background-color: lightblue;
         background: linear-gradient(antiquewhite, lightblue);
     }
 }
