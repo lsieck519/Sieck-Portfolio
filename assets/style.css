@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     box-sizing:content-box;
     margin: 0;
@@ -57,7 +61,8 @@
     font-size: 25px;
     color:brown;
     padding: 0px;
-    margin: 12px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .vertical-center {
@@ -66,7 +71,8 @@
     top: 50%;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
-  }
+}
+
 
 .content {
     width: 100%;
@@ -86,7 +92,7 @@
 article {
     margin-top: 20px;
     line-height: 1.5;
-    font-size: 21px;
+    font-size: 1.5vw;
 }
 
 .float-left {
@@ -134,11 +140,13 @@ footer {
 
 button {
     float: center;
+    padding:8px;
     font-family: monospace;
     font-size: 20px;
     background-color: beige;
     border-color: beige;
 }
+
 @media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
     body {
         background: linear-gradient(antiquewhite, lightblue);
