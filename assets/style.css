@@ -3,10 +3,12 @@ html {
 }
 
 * {
-    box-sizing:content-box;
+    box-sizing:border-content;
     margin: 0;
     padding: 0;
   } 
+
+  /*HEADER*/
 
   .header {
     padding: 20px;
@@ -37,12 +39,20 @@ html {
 .header nav a {
     text-decoration: none;
     color: darkslategray;
+
 }
 
 .header nav ul li {
     display: inline;
     margin-left: 25px;
 }
+
+.header nav a:hover {
+    background-color: transparent;
+    color: brown;
+  } 
+
+/*HERO SECTION*/
 
 .hero {
     align-items: center;
@@ -73,6 +83,7 @@ html {
     transform: translateY(-50%);
 }
 
+/*Main content below hero*/
 
 .content {
     width: 100%;
@@ -107,10 +118,13 @@ article {
 }
 
 #projectimage {  
-    width: 800px;
+
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
     margin-top:5px;
     margin-left: auto; 
-    margin-right: auto;
+    margin-right: auto%;
 }
 
  
@@ -124,18 +138,22 @@ article {
     color:white;
 }
 
+.contactlist .material-icons {
+    font-size:34px;
+    vertical-align: text-bottom;
+}
+
 .contactlinks {
     color: white;
     text-decoration: none;
 }
 
 .contactlinks:hover {
-    color: whitesmoke;
+    color: brown;
 }
 
 .contactlinks:visited {
     text-decoration: none;
-    color: white;
 }
 
 footer {
