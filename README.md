@@ -15,7 +15,7 @@ This portfolio is a deployed website that includes the following:
 
 -A functioning navigation bar
 
--A section to display samples of my previous work
+-A section to display samples of my work
 
 -An "About me" section
 
@@ -26,4 +26,3 @@ This portfolio is a deployed website that includes the following:
 ## Credits
 
 Hero image: https://unsplash.com/photos/xoeljsx5CD4
-Text-typing script: https://youtu.be/qEcXe51-ZTw 

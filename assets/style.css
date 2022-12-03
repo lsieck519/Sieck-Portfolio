@@ -2,188 +2,218 @@ html {
     scroll-behavior: smooth;
 }
 
-* {
-    box-sizing:border-content;
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin: 0;
-    padding: 0;
-  } 
-
-  /*HEADER*/
-
-  .header {
-    padding: 20px;
-    background: linear-gradient(lightblue, antiquewhite);
-    color: darkslategray;
+    background-color: lavenderblush;
 }
 
-.header h1 {
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    padding: 20px;
-    margin-left: 20px;
-    float: left;
-    font-size: 40px;
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    font-style: italic;
-}
-
-.header nav {
-    padding: 10px;
-    margin-right: 20px;
-    margin-top: 27px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 22px;
-}
-
-.header nav a {
-    text-decoration: none;
-    color: darkslategray;
-
-}
-
-.header nav ul li {
-    display: inline;
-    margin-left: 25px;
-}
-
-.header nav a:hover {
-    background-color: transparent;
-    color: brown;
-  } 
-
-/*HERO SECTION*/
+  /*HEADER, NAV, HERO*/
 
 .hero {
-    align-items: center;
-    height: 375px;
-    width: 100%;
-    display: flex;
-    background-image: url("../assets/images/CoverPhoto.jpg");
-    background-size: cover;
+    background-color: antiquewhite;
+    background-image: URL(../assets/images/CoverPhoto.jpg);
+    background-repeat: no-repeat;
     background-position: center;
-    justify-content: center;
+    height: 50vh;
 }
-
-.hero-centered {
-    text-align: center;
-    font-family:monospace;
-    font-size: 25px;
-    color:brown;
-    padding: 0px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  
+.hero-text {
+    color: darkslategray;
+    font-size: 40px;
+    font-style: oblique;
+    margin-left: 1%;
+    margin-bottom: auto;
 }
-
-.vertical-center {
+  
+.hero h1 {
+    font-size: 80px;
     margin: 0;
-    position: relative;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+    letter-spacing: 0.1em;
+}
+  
+.hero nav {
+    display: flex;
+    justify-content: space-between;
+    float: right;
+    padding: 20px;
+}
+  
+.hero nav ul {
+    display: flex;
+    list-style-type: none;
+    width: 500px;
+    justify-content: space-between;
+    font-size: 30px;
+}
+  
+.hero nav ul li {
+    text-decoration: none;
+}
+  
+.hero-area {
+    display: flex;
+    height: 70%;
+    justify-content: space-between;
+    align-items: center;
 }
 
 /*Main content below hero*/
 
-.content {
-    width: 100%;
-    display: inline-block;
- }
-
-
-.maincontent {
-    margin-bottom: 20px;
-    padding: 50px;
-    height: 300px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-color: rgb(86, 126, 126);
-    color: #ffffff;
+#about {
+    display:flex;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
 }
-
-article {
-    margin-top: 20px;
-    line-height: 1.5;
-    font-size: 1.5vw;
-}
-
-.float-left {
-    float: left;
-    margin-right: 25px;
-}
-
-.float-right {
-    float: right;
-    margin-right: 25px;
-    margin-left: 15px;
-}
-
-#projectimage {  
-
-    display: grid;
-    width: 100%;
-    grid-template-columns: repeat(3, 1fr);
-    margin-top:5px;
-    margin-left: auto; 
-    margin-right: auto;
-}
-
- 
-.contactlist {
-    margin-top: 5%;
-    line-height: 2;
-    text-decoration: none;
-    text-align: center;
+  
+#about h2 {
     font-size: 30px;
-    list-style: none;
-    color:white;
+    font-family: monospace;
+}
+  
+#about p {
+    margin: auto;
+    font-size: 19px;
+    font-weight: 100;
+    text-align: center;
+    padding: 2px;
+}
+  
+.headshot {
+    width: 200px;
+    border-radius: 190px;
+}
+  
+.headshot-container {
+    display: flex;
+    align-items: center;
+}
+  
+hr.line {
+    border-top: 5px dashed pink;
 }
 
-.contactlist .material-icons {
-    font-size:34px;
-    vertical-align: text-bottom;
+/*portfolio section*/
+
+#portfolio {
+    padding: 5px;
+  }
+
+.portfolio-section h2 {
+    font-size: 40px;
+    font-family: monospace;
+}
+  
+.portfolio-section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 80px;
+}
+  
+.portfoliosubtext {
+    font-size: 20px;
+    font-weight: 300;
+}
+  
+.portfolio-card {
+    width: 400px;
+    height: 600px;
+    border-radius: 90px;
+    box-shadow: 5px 5px 10px rgb(197, 195, 195);
+    margin: 10px;
+    background-color: snow;
+}
+  
+.portfolio-container {
+    display: flex;
+    justify-content: space-around;
+}
+  
+.portfolio-card:hover {
+    box-shadow: rgba(46, 106, 16, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
-.contactlinks {
+.portfolio-image {
+    margin-top: 25px;
+    width: 250px;
+    border-radius: 125px;
+}
+  
+hr {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+  
+.portfolio-link {
+    text-decoration: none;
+    color: #ef744b;
+}
+  
+a {
+    text-decoration: none;
     color: white;
+}
+  
+  /*footer/contact*/
+
+footer {
+    background: linear-gradient(lavenderblush, skyblue);
+    color: darkslategray;
+    text-align: center;
+    padding: 80px;
+    font-size: 20px;
+}
+
+#contact ul {
+    list-style-type: none;
     text-decoration: none;
 }
 
-.contactlinks:hover {
+#contact ul li {
+    text-decoration: none;
+    font-size: 25px;
+}
+
+#contact ul li:hover{
     color: brown;
 }
 
-.contactlinks:visited {
-    text-decoration: none;
-}
-
-footer {
-    text-align: center;
-    color: gray;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    line-height: 2;
-    margin-bottom: 5px;
-}
-
-button {
+footer button {
     float: center;
-    padding:8px;
+    padding:2px;
     font-family: monospace;
-    font-size: 20px;
+    font-size: 1em;
     background-color: beige;
     border-color: beige;
 }
 
-@media screen and (min-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of more than 800px*/
-    body {
-        background: linear-gradient(antiquewhite, lightblue);
+/*media queries*/
+
+@media only screen and (max-width: 1000px) {
+    .portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
     }
 }
-
-@media screen and (max-width: 800px) { /*The following CSS runs only for displays with a width (in pixels) of less than 800px*/
-    body {
-        background-color: lightblue;
+  
+  
+@media only screen and (max-width: 1000px) {
+    .hero nav ul {
+    display:none;
+    background-color: transparent;
+    margin: 0ppx;
+}
+  
+.hero nav ul.show {
+    display: block;
+}
+  
+.hero nav {
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: transparent;
     }
 }
-
-
     
