@@ -205,14 +205,11 @@ footer h4 {
 
 /*media queries-- removing photo on smaller sceens*/
 
-@media only screen and (max-width: 1000px) {
-    .portfolio-container {
-    display: flex;
-    flex-wrap: wrap;
-    }
-}
-
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 900px) {
+.portfolio-container {
+        display: flex;
+        flex-wrap: wrap;
+    } 
 
 #nav-list {
     display: flex;
@@ -225,6 +222,10 @@ footer h4 {
 
     .headshot-container {
         display: none;
+    }
+
+    #top h1 {
+        font-size: 35px;
     }
 }
     
