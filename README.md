@@ -21,7 +21,13 @@ This portfolio is a deployed website that includes the following:
 
 -A responsive layout 
 
-## Mockup 
+## Preview
+
+
+
+## Link
+
+https://lsieck519.github.io/Sieck-Portfolio/ 
 
 ## Credits
 

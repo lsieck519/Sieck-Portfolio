@@ -222,16 +222,17 @@ footer h4 {
     background-color: transparent;
     }
 
-    .headshot-container {
-        display: none;
-    }
-
     #top h1 {
         font-size: 35px;
     }
 }
     
+@media only screen and (max-width: 600px) {
+    .headshot-container {
+        display: none;
+    }
 
+}
 
 /*  
 @media only screen and (max-width: 1000px) {
