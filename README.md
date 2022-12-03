@@ -9,17 +9,19 @@ I created a portfolio to showcase my work as a web developer using only HTML and
 
 This portfolio is a deployed website that includes the following:
 
--My name (Laura Sieck)
+- My name (Laura Sieck)
 
--A recent photo of myself
+- A recent photo of myself
 
--A functioning navigation bar
+- A functioning navigation bar
 
--A section to display samples of my work
+- An "About me" section
 
--An "About me" section
+- A section to display samples of my work
 
--A responsive layout 
+- A section listing my contact information
+
+- A responsive layout 
 
 ## Preview
 

@@ -233,23 +233,3 @@ footer h4 {
     }
 
 }
-
-/*  
-@media only screen and (max-width: 1000px) {
-    .hero nav ul {
-    display:none;
-    background-color: transparent;
-    margin: 0ppx;
-}
-  
-.hero nav ul.show {
-    display: block;
-}
- 
-.hero nav {
-    display: flex;
-    flex-direction: column-reverse;
-    background-color: transparent;
-    }
-}
-    
