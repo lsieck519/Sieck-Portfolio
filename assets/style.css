@@ -123,7 +123,7 @@ hr.line {
   
 .portfolio-card {
     width: 400px;
-    height: 400px;
+    height: 450px;
     border-radius: 90px;
     box-shadow: 5px 5px 10px rgb(197, 195, 195);
     margin: 10px;
@@ -144,7 +144,7 @@ hr.line {
 .portfolio-image {
     margin-top: 25px;
     width: 250px;
-    border-radius: 125px;
+    border-radius: 15px;
 }
   
 hr {
