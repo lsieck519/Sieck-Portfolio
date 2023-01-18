@@ -4,8 +4,8 @@ html {
 
 body {
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    margin: 0;
     background-color: lavenderblush;
+    margin: 0px;
 }
 
   /*HEADER, NAV, HERO*/
@@ -15,7 +15,8 @@ body {
     background-image: URL(../assets/images/CoverPhoto.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 50vh;
+    width: 100vw;
+    height: 40vh;
 }
   
 .hero-text {
@@ -41,47 +42,43 @@ body {
     justify-content: space-between;
     float: right;
     padding: 20px;
+    margin-right: 25px;
 }
   
 .hero nav ul {
     display: flex;
     list-style-type: none;
-    width: 550px;
+    width: 30vw;
     justify-content: space-between;
-    font-size: 30px;
+    font-size: 2em;
 }
   
 .hero nav ul li {
     text-decoration: none;
 }
   
-.hero-area {
-    display: flex;
-    height: 70%;
-    justify-content: space-between;
-    align-items: center;
-}
 
 /*Main content below hero*/
 
 #about {
-    display:flex;
+    display: flex;
     justify-content: center;
     padding: 20px;
     position: relative;
+    margin: 1%;
 }
   
 #about h2 {
-    font-size: 30px;
+    font-size: 2.4em;
     font-family: monospace;
 }
   
 #about p {
     margin: auto;
-    font-size: 19px;
+    font-size: 1.6em;
     font-weight: 100;
     text-align: center;
-    padding: 2px;
+    padding: 1%;
 }
   
 .headshot {
@@ -105,7 +102,7 @@ hr.line {
   }
 
 .portfolio-section h2 {
-    font-size: 40px;
+    font-size: 3em;
     font-family: monospace;
 }
   
@@ -113,20 +110,20 @@ hr.line {
     display: flex;
     flex-direction: column;
     text-align: center;
-    padding: 80px;
+    padding: 10%;
 }
   
 .portfoliosubtext {
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 300;
 }
   
 .portfolio-card {
     width: 400px;
-    height: 450px;
-    border-radius: 90px;
+    height: 550px;
+    border-radius: 10px;
     box-shadow: 5px 5px 10px rgb(197, 195, 195);
-    margin: 10px;
+    margin: 15px;
     background-color: snow;
 }
   
@@ -138,13 +135,14 @@ hr.line {
 .portfolio-card:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     width: 420px;
-    height: 420px;
+    height: 560px;
 }
 
 .portfolio-image {
     margin-top: 25px;
-    width: 250px;
-    border-radius: 15px;
+    width: 80%;
+    height: 30%;
+    border-radius: 10px;
 }
   
 hr {
@@ -207,11 +205,17 @@ footer h4 {
 
 /*media queries-- removing photo on smaller sceens*/
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1300px) {
+
+
 .portfolio-container {
         display: flex;
         flex-wrap: wrap;
     } 
+
+#about p {
+    width: 100vw;
+}
 
 #nav-list {
     display: flex;
@@ -225,11 +229,26 @@ footer h4 {
     #top h1 {
         font-size: 35px;
     }
+    .hero nav {
+        font-size: 10px;
+    }
+
+    #about {
+        width: 90%;
+        text-align: center;
+    }
+    body {
+        width: 100vw;
+    }
 }
     
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
     .headshot-container {
         display: none;
+    }
+
+    #about h2 {
+        display:none;
     }
 
 }
