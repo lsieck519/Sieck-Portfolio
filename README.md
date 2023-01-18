@@ -25,10 +25,6 @@ This portfolio is a deployed website that includes the following:
 
 ## Preview
 
-<img width="1221" alt="Portfolio1" src="https://user-images.githubusercontent.com/99048123/205464436-20ceb6fb-3750-43f6-a9ad-aa7fe06045cb.png">
-<img width="1219" alt="Portfolio2" src="https://user-images.githubusercontent.com/99048123/205464439-fdf06e1e-14aa-4ba0-a94a-1515b751684c.png">
-<img width="1222" alt="Portfolio3" src="https://user-images.githubusercontent.com/99048123/205464441-0da2465a-f1ce-4f04-87d9-41329ec3317a.png">
-
 
 
 ## Link
